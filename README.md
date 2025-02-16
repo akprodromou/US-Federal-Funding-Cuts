@@ -2,9 +2,9 @@
 
 ## Background 
 
-President Donald Trump's administration has not frozen all federal programs. The freeze primarily targets specific areas such as foreign aid, diversity, equity, and inclusion (DEI) initiatives, and environmental projects. On January 27, 2025, the Office of Management and Budget (OMB) issued a memorandum directing federal agencies to temporarily pause activities related to the obligation or disbursement of federal financial assistance in these targeted areas. citeturn0search11
+President Donald Trump's administration has not frozen all federal programs. The freeze primarily targets specific areas such as foreign aid, diversity, equity, and inclusion (DEI) initiatives, and environmental projects. On January 27, 2025, the Office of Management and Budget (OMB) issued a memorandum directing federal agencies to temporarily pause activities related to the obligation or disbursement of federal financial assistance in these targeted areas. 
 
-The OMB identified approximately 2,600 federal programs for review under this directive. However, essential programs that provide direct benefits to Americans, such as Social Security, Medicare, Medicaid, SNAP, Pell Grants, and Head Start, were explicitly exempted from the freeze. citeturn0search11
+The OMB identified approximately 2,600 federal programs for review under this directive. However, essential programs that provide direct benefits to Americans, such as Social Security, Medicare, Medicaid, SNAP, Pell Grants, and Head Start, were explicitly exempted from the freeze. 
 
 While the freeze affects a significant number of programs, it does not encompass all federal programs. The targeted programs represent a portion of federal initiatives, with critical services and benefits to individuals remaining unaffected. 
 
