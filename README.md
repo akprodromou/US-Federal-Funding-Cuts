@@ -16,4 +16,12 @@ The aim of this project is to create a visualization that will shifts the focus 
 2. Data preparation in a notebook using python and scikit-learn. Export the data in JSON - an appropriate format to use in D3.js.
 3. Data visualization using D3.js.
 
-The data be stored on Github, in a sparse matrix.
+## Project Structure
+
+📂 project-root  
+│── 📂 data-preparation  # Python scripts for data processing  
+│── 📂 data              # Raw and processed data files  
+│── 📂 web-app           # Frontend code (HTML, CSS, JS)  
+│── 📄 README.md         # Documentation  
+│── 📄 requirements.txt  # Dependencies 
+
