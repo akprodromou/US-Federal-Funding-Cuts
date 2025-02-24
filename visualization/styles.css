@@ -1,5 +1,20 @@
-    .treemap-text{
-        text-anchor: middle;
-        font-family: "DM Sans", serif;
-        font-weight: 300;
-    }
+.treemap-text {
+    text-anchor: middle;
+    font-family: "DM Sans", serif;
+    font-weight: 300;
+}
+
+svg text.title {
+    color: #F1D4AF;
+    font-family: "DM Serif Display", sans-serif;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-transform: capitalize;
+}
+
+.description {
+    font-size: 0.75rem;
+    fill: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+}

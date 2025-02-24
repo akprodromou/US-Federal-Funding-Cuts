@@ -1,9 +1,14 @@
 // Load Data
-d3.csv("../departments_funding.csv").then(fundingData => {
-    d3.json("../word_counts_by_department.json").then(wordData => {
+d3.csv("../data/departments_funding.csv").then(fundingData => {
+    d3.json("../data/word_counts_by_department.json").then(wordData => {
 
-        const width = 900, height = 1200;
-        
+        const offset = 220;
+        const treemapHeight = 900;
+        const treemapWidth = 600;
+        const totalHeight = treemapHeight + offset;
+        const totalWidth = treemapWidth + offset;
+        const paddingOuter = 5;
+          
         // Convert funding to numeric 
         fundingData.forEach(d => {
             d.Funding = +d.funding || 1; // Ensure funding is numeric
@@ -16,21 +21,21 @@ d3.csv("../departments_funding.csv").then(fundingData => {
 
         // Create Treemap Layout
         const treemap = d3.treemap()
-            .size([width, height])
+            .size([treemapWidth, treemapHeight])
             .paddingOuter(5)
             .paddingInner(0); 
 
         treemap(root);
 
         const svg = d3.select("svg")
-            .attr("width", width)
-            .attr("height", height);
+            .attr("width", totalWidth)
+            .attr("height", totalHeight);
 
         const nodes = svg.selectAll("g")
             .data(root.leaves())
             .enter()
             .append("g")
-            .attr("transform", d => `translate(${d.x0},${d.y0})`);
+            .attr("transform", d => `translate(${d.x0 + offset/2},${d.y0 + offset})`);
 
         // Draw Treemap Rectangles
         nodes.append("rect")
@@ -103,6 +108,35 @@ d3.csv("../departments_funding.csv").then(fundingData => {
                     .text(d => d.text);
             }
         }
+
+        svg.append("text")
+        .text("US Federal Funding Freeze")
+        .attr("class","title")
+        .attr("text-anchor", "start") 
+        .attr("x",offset/2 + 2.5) // Set horizontal position
+        .attr("y", 45) // Set vertical position
+        .attr("fill", "black");
+
+        // Append description below the title
+        svg.append("foreignObject")
+        .attr("width", treemapWidth) 
+        .attr("height", 200) 
+        .attr("x", offset/2 + paddingOuter) // Set horizontal position
+        .attr("y", 65)
+        .attr("class","description")
+        .append("xhtml:div")
+        .style("text-align", "left") 
+        .style("color", "black")
+        .html(`
+        On January 27, 2025, the US Office of Management and Budget (OMB) issued a memorandum directing federal<br>
+        agencies to temporarily pause activities related to the obligation or disbursement of federal financial assistance<br>
+        in targeted areas such as foreign aid, diversity, equity, and inclusion (DEI) initiatives, and environmental projects.<br>
+        <span style="display: block; margin-top: 5px;"></span>
+        The OMB identified approximately 2,600 federal programs for review under this directive. While the freeze affects<br>
+        a significant number of programs, it does not encompass all federal programs, but approximately 20-30% of them. The total freeze is estimated at over $6.375 trillion .<br>
+        <span style="display: block; margin-top: 5px;"></span>
+        This visualization shifts the focus from individual programs to thematic funding distribution within each department, highlighting key themes/topics (words) that receive funding across multiple programs.<br>
+        `);
        
     });
 });
