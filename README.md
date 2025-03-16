@@ -18,10 +18,10 @@ The aim of this project is to create a visualization that will shifts the focus 
 
 ## Project Structure
 
-📂 project-root  
-│── 📂 data-preparation  # Python scripts for data processing  
-│── 📂 data              # Raw and processed data files  
-│── 📂 web-app           # Frontend code (HTML, CSS, JS)  
-│── 📄 README.md         # Documentation  
-│── 📄 requirements.txt  # Dependencies 
+project-root  
+│── data-preparation  # Python scripts for data processing  
+│── data              # Raw and processed data files  
+│── web-app           # Frontend code (HTML, CSS, JS)  
+│── README.md         # Documentation  
+│── requirements.txt  # Dependencies 
 
