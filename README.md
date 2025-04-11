@@ -8,7 +8,7 @@ The OMB identified approximately 2,600 federal programs for review under this di
 
 ## Aim
 
-The aim of this project is to create a visualization that will shifts the focus from individual programs to thematic funding distribution within each department. Instead of looking at just programs, it highlights key themes/topics (words) that receive funding across multiple programs. This makes it easier to identify funding priorities and patterns within each department.
+The aim of this project is to create a visualization that shifts the focus from individual programs to thematic funding distribution within each department. Instead of looking at just programs, it highlights key themes/topics (words) that receive funding across multiple programs. This makes it easier to identify funding priorities and patterns within each department.
 
 ## Workflow
 
